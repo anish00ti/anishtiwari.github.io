@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Navbar</title>
+    <link rel="stylesheet" href="css/navbar-style.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/service.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/skills.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">Anish</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About Me</a></li>
+                <li class="nav-item"><a href="#services" class="nav-link">Service</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+
+    
+    <section class="home" id="home">
+        <div class="home__content">
+            <h1 class="home__title animated-text">Hi, I'm <span class="home__title--highlight">Anish Tiwari</span></h1>
+            <p class="home__subtitle animated-text">I help businesses grow with <strong>SEO strategies</strong> and create stunning <strong>UI/UX designs</strong> that drive results.</p>
+            <a href="#services" class="home__cta-btn animated-text">Explore My Services</a>
+        </div>
+    </section>
+
+
+
+
+    <section class="about-section" id="about">
+        <h2 class="about-title">About Me</h2>
+        <div class="about-container">
+            <p class="about-text">
+                I am a dedicated and self-motivated professional with a strong foundation in technology and design. My journey began with a commitment to self-directed learning, where I acquired valuable skills through reputable platforms such as 
+                <i class="fab fa-coursera about-icon"></i> Coursera and 
+                <i class="fab fa-youtube about-icon"></i> YouTube, supplemented by consistent practice and real-world application.
+            </p>
+            <p class="about-text">
+                In 2023, I embarked on my freelancing career, specializing in <span class="about-highlight">UI/UX design</span> and <span class="about-highlight">SEO</span>. Since then, I have been delivering high-quality, client-focused solutions that blend creativity with technical precision. My work is driven by a passion for innovation and a commitment to exceeding expectations.
+            </p>
+            <p class="about-text">
+                In 2025, I proudly graduated with a <span class="about-highlight">Bachelor of Computer Applications (BCA)</span> from Pokhara University, solidifying my academic background and enhancing my professional capabilities. This milestone reflects my dedication to continuous growth and excellence in the field.
+            </p>
+            <p class="about-text">
+                With a focus on professionalism, integrity, and impactful results, I strive to contribute meaningfully to every project I undertake. Explore my skill set below to learn more about what I bring to the table.
+            </p>
+            <a href="#skills" class="skills-button">View My Skills <i class="fas fa-arrow-down"></i></a>
+        </div>
+    </section>
+
+
+
+
+    <section id="services" class="services">
+        <div class="services__content">
+            <h2 class="services__title">What I Offer</h2>
+            <p class="services__subtitle">Tailored solutions to elevate your online presence and user experience.</p>
+            <div class="services__grid">
+                <!-- SEO Services -->
+                <div class="services__card">
+                    <div class="services__icon">📈</div>
+                    <h3 class="services__card-title">Search Engine Optimization (SEO)</h3>
+                    <p class="services__card-description">
+                        I optimize websites to rank higher on search engines, driving organic traffic and improving visibility.
+                    </p>
+                    <ul class="services__card-list">
+                        <li>Keyword Research & Analysis</li>
+                        <li>On-Page & Off-Page SEO</li>
+                        <li>Technical SEO Audits</li>
+                        <li>Content Strategy & Optimization</li>
+                    </ul>
+                    <a href="#contact" class="services__button">Let's Talk</a>
+                </div>
+    
+                <!-- UI/UX Design Services -->
+                <div class="services__card">
+                    <div class="services__icon">🎨</div>
+                    <h3 class="services__card-title">UI/UX Design</h3>
+                    <p class="services__card-description">
+                        I design intuitive and visually appealing interfaces that enhance user experience and engagement.
+                    </p>
+                    <ul class="services__card-list">
+                        <li>Wireframing & Prototyping</li>
+                        <li>User Research & Testing</li>
+                        <li>Responsive Web Design</li>
+                        <li>Interactive & Accessible Design</li>
+                    </ul>
+                    <button class="services__button" onclick="scrollToContact()" style="display: inline-block; padding: 12px 30px; background-color: #007bff; color: #fff; text-decoration: none; border: none; border-radius: 5px; font-size: 1.1rem; font-family: Arial, sans-serif; cursor: pointer; transition: background-color 0.3s ease, transform 0.3s ease; position: fixed; bottom: 20px; right: 20px; z-index: 1000;">Let's Talk</button>
+                </div>
+    
+                <!-- Performance Optimization -->
+                <div class="services__card">
+                    <div class="services__icon">🚀</div>
+                    <h3 class="services__card-title">Performance Optimization</h3>
+                    <p class="services__card-description">
+                        I ensure your website is fast, secure, and optimized for peak performance.
+                    </p>
+                    <ul class="services__card-list">
+                        <li>Website Speed Optimization</li>
+                        <li>Mobile-First Design</li>
+                        <li>Security Audits</li>
+                        <li>Analytics & Reporting</li>
+                    </ul>
+                    <button class="services__button" onclick="scrollToContact()" style="display: inline-block; padding: 12px 30px; background-color: #007bff; color: #fff; text-decoration: none; border: none; border-radius: 5px; font-size: 1.1rem; font-family: Arial, sans-serif; cursor: pointer; transition: background-color 0.3s ease, transform 0.3s ease; position: fixed; bottom: 20px; right: 20px; z-index: 1000;">Let's Talk</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="skills-section" id="skills">
+        <h2 class="skills-title">My Skills</h2>
+        <div class="skills-container">
+            <!-- UI/UX Skills -->
+            <div class="skill-category">
+                <div class="skill-header">
+                    <i class="fas fa-paint-brush skill-icon"></i> UI/UX Design
+                </div>
+                <ul class="skill-list">
+                    <li class="skill-item">User Research & Persona Development</li>
+                    <li class="skill-item">Wireframing & Prototyping</li>
+                    <li class="skill-item">Interaction Design</li>
+                    <li class="skill-item">Visual Design (Typography, Color Theory)</li>
+                    <li class="skill-item">Tools: Figma, Adobe XD, Sketch</li>
+                    <li class="skill-item">Usability Testing</li>
+                </ul>
+            </div>
+
+            <!-- SEO Skills -->
+            <div class="skill-category">
+                <div class="skill-header">
+                    <i class="fas fa-search skill-icon"></i> Search Engine Optimization (SEO)
+                </div>
+                <ul class="skill-list">
+                    <li class="skill-item">Keyword Research & Analysis</li>
+                    <li class="skill-item">On-Page Optimization (Meta Tags, Content)</li>
+                    <li class="skill-item">Off-Page Optimization (Link Building)</li>
+                    <li class="skill-item">Technical SEO (Site Speed, Mobile Optimization)</li>
+                    <li class="skill-item">Tools: Google Analytics, SEMrush, Ahrefs</li>
+                    <li class="skill-item">Content Strategy & SEO Audits</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="contact-section" id="contact">
+        <h2 class="contact-title">Contact Us</h2>
+        <p class="contact-subtitle">We’d love to hear from you! Reach out to us through any of the following methods.</p>
+        
+        <div class="contact-container">
+            <!-- Email -->
+            <div class="contact-item">
+                <i class="fas fa-envelope contact-icon"></i>
+                <div class="contact-label">Email</div>
+                <a href="mailto:anishtiwari.937@gmail.com" class="contact-link">anishtiwari.937@gmail.com</a>
+            </div>
+
+            <!-- WhatsApp -->
+            <div class="contact-item">
+                <i class="fab fa-whatsapp contact-icon"></i>
+                <div class="contact-label">WhatsApp</div>
+                <a href="https://wa.me/+9779867077378" target="_blank" class="contact-link">+977 9867077378</a>
+            </div>
+
+            <!-- Telephone -->
+            <div class="contact-item">
+                <i class="fas fa-phone contact-icon"></i>
+                <div class="contact-label">Phone</div>
+                <a href="tel:+9779867077378" class="contact-link">9867077378</a>
+            </div>
+
+            <!-- LinkedIn -->
+            <div class="contact-item">
+                <i class="fab fa-linkedin contact-icon"></i>
+                <div class="contact-label">LinkedIn</div>
+                <a href="https://www.linkedin.com/in/anish-tiwari-8736a4337?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="contact-link">Connect with Me</a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer class="footer-section">
+        <div class="footer-container">
+            <!-- About Column -->
+            <div class="footer-column">
+                <h3 class="footer-title">About Me</h3>
+                <p class="footer-text">
+                    I’m a self-taught professional with a BCA from Pokhara University (2025). Since 2023, I’ve been freelancing in UI/UX design and SEO, delivering innovative and client-focused solutions with a commitment to excellence.
+                </p>
+            </div>
+
+            <!-- Contact Column -->
+            <div class="footer-column">
+                <h3 class="footer-title">Contact Info</h3>
+                <ul class="footer-list">
+                    <li>
+                        <i class="fas fa-envelope footer-icon"></i>
+                        <a href="mailto:anishtiwari.937@gmail.com" class="footer-link">anishtiwari.937@gmail.com</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-phone footer-icon"></i>
+                        <a href="tel:+9779867077378" class="footer-link">+977 9867077378</a>
+                    </li>
+                    <li>
+                        <i class="fab fa-whatsapp footer-icon"></i>
+                        <a href="https://wa.me/+9779867077378" target="_blank" class="footer-link">WhatsApp</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Quick Links Column -->
+            <div class="footer-column">
+                <h3 class="footer-title">Quick Links</h3>
+                <ul class="footer-list">
+                    <li><a href="#about" class="footer-link">About Me</a></li>
+                    <li><a href="#skills" class="footer-link">Skills</a></li>
+                    <li><a href="#contact" class="footer-link">Contact Us</a></li>
+                </ul>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/anish-tiwari-8736a4337?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://wa.me/+9779867077378" target="_blank" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2025 Anish Tiwari | All Rights Reserved
+        </div>
+    </footer>
+
+
+    <script src="js/navbar-script.js"></script>
+    <script src="js/home.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="js/about.js"></script>
+    <script src="js/skills.js"></script>
+    <script src="js/footer.js"></script>
+
+
+    <script>
+        // Smooth scroll to contact section
+        function scrollToContact() {
+            const contactSection = document.querySelector('#contact');
+            if (contactSection) {
+                contactSection.scrollIntoView({ behavior: 'smooth' });
+            } else {
+                console.log("Contact section not found. Ensure it has id='contact'.");
+            }
+        }
+
+        console.log("Button loaded successfully!");
+    </script>
+
+
+</body>
+</html>

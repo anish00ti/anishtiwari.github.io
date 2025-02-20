@@ -1,0 +1,122 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Home Section */
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.home__content {
+    max-width: 800px;
+}
+
+.home__title {
+    font-size: 3.5rem;
+    margin-bottom: 15px;
+    color: #333;
+    font-weight: 700;
+}
+
+.home__title--highlight {
+    color: #007BFF; /* Highlight your name with a primary color */
+}
+
+.home__subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    color: #666;
+    font-weight: 400;
+}
+
+.home__subtitle strong {
+    color: #007BFF; /* Highlight keywords in the subtitle */
+}
+
+.home__cta-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: #007BFF;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.home__cta-btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animated-text {
+    opacity: 0;
+    animation: fadeInUp 1s ease forwards;
+}
+
+.animated-text:nth-child(1) {
+    animation-delay: 0.5s;
+}
+
+.animated-text:nth-child(2) {
+    animation-delay: 1s;
+}
+
+.animated-text:nth-child(3) {
+    animation-delay: 1.5s;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .home__title {
+        font-size: 2.5rem;
+    }
+
+    .home__subtitle {
+        font-size: 1.2rem;
+    }
+
+    .home__cta-btn {
+        font-size: 0.9rem;
+        padding: 10px 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .home__title {
+        font-size: 2rem;
+    }
+
+    .home__subtitle {
+        font-size: 1rem;
+    }
+
+    .home__cta-btn {
+        font-size: 0.8rem;
+        padding: 8px 20px;
+    }
+}
